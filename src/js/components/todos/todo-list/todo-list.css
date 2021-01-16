@@ -1,0 +1,146 @@
+.todo-list {
+  list-style: none;
+  padding: 0 1rem;
+  margin: 0;
+  width: 100%;
+  transition: all .5s ease;
+  overflow: scroll;
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.todo-header hr {
+  flex-basis: calc(100% - 3px);
+  position: relative;
+  top: -37px;
+  border: 1px solid #eee;
+}
+
+.todo-header .today-date {
+  position: relative;
+  top: -44px;
+  font-size: 12px;
+  color: #888;
+}
+
+.todo-item {
+  box-shadow: 1px 4px 16px #ccc;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 2rem;
+  align-items: center;
+}
+
+.new-todo-item {
+  margin-bottom: 3rem;
+}
+
+.todo-title {
+  color: #888;
+  padding: 0.5rem 0.5rem;
+  margin-left: 0.4rem;
+  flex-grow: 1;
+  max-width: 300px;
+}
+
+.completed .todo-title {
+  text-decoration: line-through;
+  color: #ddd;
+}
+
+.todo-title:before {
+  content: ' '
+}
+
+.btn-wrapper {
+  display: flex;
+}
+
+.btn-add-todo {
+  width: 60px;
+  box-shadow: 1px 4px 16px #ddd;
+  border-radius: 50%;
+  height: 60px;
+  margin-top: 25px;
+  position: relative;
+  z-index: 300;
+  background: #fff;
+  font-size: 70px;
+  text-align: center;
+  vertical-align: text-top;
+  line-height: 50px;
+  font-weight: 200;
+  color: #A23B72;
+  cursor: pointer;
+}
+
+.btn-add-todo:hover {
+  /* background-color: #4a9df2; */
+  background-color: #A23B72;
+  color: #fff;
+}
+
+.btn-circle {
+  background-image: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  box-shadow: 1px 4px 10px #ccc;
+  border-radius: 1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 0.4rem;
+}
+
+.btn-chars {
+  text-align: center;
+  vertical-align: text-top;
+  cursor: pointer;
+}
+
+.btn-add {
+  font-size: 30px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #51B1F5;
+}
+
+.btn-cancel {
+  line-height: 20px;
+  font-weight: 300;
+  font-size: 30px;
+  color: #EF476F;
+}
+
+.btn-complete {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #06D6A0;
+}
+
+.btn-complete:hover, .completed .btn-complete {
+  color: #fff;
+  background-color: #06D6A0;
+}
+
+.btn-cancel:hover {
+  color: #fff;
+  background-color: #EF476F;
+}
+
+[contenteditable] {
+  outline: 0px solid transparent;
+}
+
+[data-placeholder]:empty:before{
+  content: attr(data-placeholder);
+  color: #888;
+  font-style: italic;
+}
