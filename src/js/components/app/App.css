@@ -52,6 +52,13 @@
   color: #888;
 }
 
+
+@media only screen and (max-width: 600px) {
+  .content-wrapper {
+    margin: 0
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
