@@ -112,19 +112,18 @@
   margin-top: 25px;
   position: relative;
   z-index: 300;
-  background: #fff;
   font-size: 70px;
   text-align: center;
   vertical-align: text-top;
   line-height: 50px;
   font-weight: 200;
-  color: #A23B72;
   cursor: pointer;
+  background: #A23B72;
+  color: #fff;
 }
 
 .btn-add-todo:hover {
-  /* background-color: #4a9df2; */
-  background-color: #A23B72;
+  background-color: #7d2c58;
   color: #fff;
 }
 
