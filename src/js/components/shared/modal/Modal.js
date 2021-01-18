@@ -1,7 +1,7 @@
 import React from 'react'
 
 //====== INTERNAL ======
-import './modal.scss'
+import './modal.css'
 
 class Modal extends React.Component {
   render() {
