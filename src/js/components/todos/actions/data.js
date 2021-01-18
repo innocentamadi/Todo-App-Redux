@@ -11,7 +11,7 @@ export default [
     "title": "Deploy the project to Heroku",
     "order": 523,
     "completed": false,
-    "deadline": "2021-01-18",
+    "dueDate": "2021-01-18",
     "url": "http://todo-backend-express.herokuapp.com/37572"
   },
   {

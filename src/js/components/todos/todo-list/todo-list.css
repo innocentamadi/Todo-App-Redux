@@ -38,8 +38,17 @@
   align-items: center;
 }
 
+.todo-item .due-date {
+  font-size: 10px;
+  margin-top: 5px;
+  padding: 0 15px 5px;
+  margin-top: -5px;
+  color: #bbb;
+}
+
 .new-todo-item {
   margin-bottom: 3rem;
+  flex-wrap: wrap;
 }
 
 .todo-title {
@@ -47,7 +56,6 @@
   padding: 0.5rem 0.5rem;
   margin-left: 0.4rem;
   flex-grow: 1;
-  max-width: 300px;
 }
 
 .completed .todo-title {
@@ -61,6 +69,33 @@
 
 .btn-wrapper {
   display: flex;
+}
+
+.btn-circle.btn-clock {
+  font-size: 15px;
+  line-height: 25px;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 1rem;
+  opacity: 0.9;
+}
+
+.btn-circle.btn-clock:hover {
+  opacity: 1;
+}
+
+.btn-times {
+  padding: 1px 5px;
+  margin-left: 4px;
+  margin-top: 0.2px;
+  cursor: pointer;
+  color: #ddd;
+  border-radius: 3px;
+}
+
+.btn-times:hover {
+  background: #eee;
+  color: #444;
 }
 
 .btn-add-todo {
@@ -133,6 +168,20 @@
 .btn-cancel:hover {
   color: #fff;
   background-color: #EF476F;
+}
+
+.due-date-selector {
+  width: 100%;
+  display: flex;
+  padding: 0 15px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.due-date-selector .label {
+  font-size: 12px;
+  margin-right: 10px;
+  color: #888;
 }
 
 [contenteditable] {
