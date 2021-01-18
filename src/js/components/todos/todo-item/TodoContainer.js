@@ -1,4 +1,6 @@
 import React, { Component} from 'react'
+
+//====== INTERNAL ======
 import TodoItem from './TodoItem';
 
 
@@ -9,11 +11,16 @@ class TodoContainer extends Component {
     this.handleTitleChange = this.handleTitleChange.bind(this)
     this.handleUpdate = this.handleUpdate.bind(this)
     this.handleDelete = this.handleDelete.bind(this)
+    this.deleteItem = this.deleteItem.bind(this)
   }
 
   handleDelete() {
-    const res = window.confirm(`Are you sure you want to delete "${this.props.todo.title}?"`)
-    if (res) this.props.deleteTodo(this.props.todo)
+    const modalText = `Are you sure you want to delete "${this.props.todo.title}?"`
+    this.props.setShowModal(true, this.deleteItem, modalText)
+  }
+
+  deleteItem() {
+    this.props.deleteTodo(this.props.todo)
   }
 
   handleTitleChange(event, title) {

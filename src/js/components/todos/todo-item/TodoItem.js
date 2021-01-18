@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import moment from 'moment'
 
 class TodoItem extends Component {
   constructor(props) {
@@ -37,6 +38,7 @@ class TodoItem extends Component {
     return (
       <li>
         <div className={`todo-item ${todo.completed ? 'completed' : ''}`}>
+          <div>
           <div 
             contentEditable
             className="todo-title"
@@ -44,6 +46,12 @@ class TodoItem extends Component {
             onKeyUp={(e) => handleTitleChange(e, e.target.innerText) }
           >
             {todo.title}
+          </div>
+            {todo.dueDate && (
+              <div className="due-date">
+                &#128336;&nbsp; {moment(todo.dueDate).format("LT - Do MMM, YYYY")}
+              </div>
+            )}
           </div>
           <span className="btn-wrapper">
             {
