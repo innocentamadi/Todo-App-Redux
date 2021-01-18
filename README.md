@@ -2,6 +2,8 @@
 
 This is a basic Todo App built with React and Redux
 
+![alt Demo](./public/demo.gif?raw=true)
+
 ## Available Scripts
 
 In the project directory, you can run:
