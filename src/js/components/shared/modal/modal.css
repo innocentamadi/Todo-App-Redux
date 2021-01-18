@@ -17,11 +17,13 @@
   opacity: 1;
   color: #666;
 
-  .modal-btn-wrapper {
-    display: flex;
-    justify-content: center;
-  }
 }
+
+.modal .modal-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .btn-modal {
   border: none;
   padding: 10px 15px;
