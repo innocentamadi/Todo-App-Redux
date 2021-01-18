@@ -7,6 +7,12 @@
   overflow: scroll;
 }
 
+.label-completed {
+  margin: 3rem 0 1rem;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
 .todo-header {
   display: flex;
   justify-content: space-between;

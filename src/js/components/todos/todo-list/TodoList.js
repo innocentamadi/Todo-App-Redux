@@ -60,7 +60,20 @@ class TodoList extends Component {
               toggleTodoForm={this.toggleTodoForm} />
           }
           {
-            todos && todos.reverse().map((todo) => (
+            todos && todos.filter(item => !item.completed).reverse().map((todo) => (
+              <TodoItem
+                key={todo.id}
+                todo={todo} 
+                setShowModal={this.setShowModal}
+                updateTodo={this.props.updateTodo}
+                deleteTodo={this.props.deleteTodo} />
+            ))
+          }
+        <p className="label-completed">
+          Completed
+        </p>
+          {
+            todos && todos.filter(item => item.completed).reverse().map((todo) => (
               <TodoItem
                 key={todo.id}
                 todo={todo} 

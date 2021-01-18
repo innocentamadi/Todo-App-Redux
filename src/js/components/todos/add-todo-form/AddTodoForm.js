@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import DateTime from 'react-datetime'
+import moment from 'moment'
 
 import "react-datetime/css/react-datetime.css"
 
@@ -49,7 +50,9 @@ class TodoInput extends Component {
           {dueDateVisible && (
             <div className="due-date-selector">
               <span className="label">Select a due date</span>
-              <DateTime closeOnSelect onChange={handleDueDateChange} />
+              <DateTime closeOnSelect 
+                isValidDate={(current, selected) => moment(current).add(1, 'days').isSameOrAfter(selected)}
+                onChange={handleDueDateChange} />
               <span className="btn-times" onClick={toggleDueDateVisible}>
                 &#215;
               </span>
