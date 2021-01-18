@@ -4,6 +4,10 @@ This is a basic Todo App built with React and Redux
 
 ![alt Demo](./public/demo.gif?raw=true)
 
+This app uses both `*.css` and `*.scss` to showcase how we could work with both
+
+Deployed [Here](http://cent-todo-app.herokuapp.com)
+
 ## Available Scripts
 
 In the project directory, you can run:
