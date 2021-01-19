@@ -36,4 +36,4 @@ export {
   deleteTodo
 }
 
-export default {}
+export default getTodos

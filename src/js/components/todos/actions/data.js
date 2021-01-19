@@ -1,4 +1,4 @@
-export default [
+const data = [
   {
     "id": "37571",
     "title": "Get the Redux Project Completed",
@@ -43,3 +43,5 @@ export default [
     "url": "http://todo-backend-express.herokuapp.com/37576"
   }
 ]
+
+export default data

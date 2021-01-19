@@ -1,10 +1,5 @@
 import actionTypes from 'js/components/todos/actions/actionTypes'
 
-function getId(state) {
-  return state.todos.reduce((maxId, todo) => {
-    return Math.max(todo.id, maxId)
-  }, -1) + 1
-}
 const defaultState = [];
 
 let reducer = (state = defaultState, action) => {
