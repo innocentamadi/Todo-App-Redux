@@ -5,10 +5,6 @@ import moment from 'moment'
 import "react-datetime/css/react-datetime.css"
 
 class TodoInput extends Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     const {
       todo,
