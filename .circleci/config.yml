@@ -32,17 +32,6 @@ jobs:
             yarn lint
 
       - run:
-          name: Run flow check
-          command: |
-            yarn flow:check
-
-      # I'll get back to enforcing this later
-      # - run:
-      #     name: Run flow coverage
-      #     command: |
-      #       yarn flow:report
-
-      - run:
           name: Run test suite and generate coverage
           command: |
             yarn test -u --coverage --maxWorkers 2

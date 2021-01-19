@@ -21,7 +21,7 @@ class Modal extends React.Component {
               }>
               Delete
             </button>
-            <button className="btn-modal"
+            <button className="btn-modal btn-cancel"
               onClick={() => onClose()}>
               Cancel
             </button>
