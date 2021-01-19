@@ -1,5 +1,5 @@
-[![CircleCI](https://circleci.com/gh/Doxel-AI/Todo-App-Redux.svg?style=shield&circle-token=14359bf91c4c7c5cece5c5f885a55d5632f12477)](https://circleci.com/gh/Doxel-AI/Todo-App-Redux)
-[![Coverage Status](https://coveralls.io/repos/github/Doxel-AI/Todo-App-Redux/badge.svg?branch=master&t=ne9um1)](https://coveralls.io/github/Doxel-AI/Todo-App-Redux?branch=master)
+[![CircleCI](https://circleci.com/gh/innocentamadi/Todo-App-Redux.svg?style=shield&circle-token=14359bf91c4c7c5cece5c5f885a55d5632f12477)](https://circleci.com/gh/innocentamadi/Todo-App-Redux)
+[![Coverage Status](https://coveralls.io/repos/github/innocentamadi/Todo-App-Redux/badge.svg?branch=master&t=ne9um1)](https://coveralls.io/github/innocentamadi/Todo-App-Redux?branch=master)
 # Todo App
 
 This is a basic Todo App built with React and Redux
